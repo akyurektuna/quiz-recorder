@@ -1,3 +1,10 @@
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/202d38c0-5fb2-4b15-9a6e-b618fbea7330/deploy-status)](https://app.netlify.com/sites/angry-kilby-2c8818/deploys)
+
+
+https://github.com/akyurektuna/akyurektuna.github.io 
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
