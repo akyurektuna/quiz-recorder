@@ -11,9 +11,9 @@ function Player({ srcBlob, audio }) {
   }
 
   if(srcBlob){
-    window.parent.postMessage('Hello Parent Frame!', '*');
+    window.parent.postMessage(srcBlob, '*');
+    //burada srcBlobu gönder
   }
-  //burasi player srcBlob olusturuyor
   return (
     <video
       src={URL.createObjectURL(srcBlob)}
