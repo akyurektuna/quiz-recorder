@@ -11,7 +11,7 @@ function Player({ srcBlob, audio }) {
   }
 
   if(srcBlob){
-    window.parent.postMessage(srcBlob, '*');
+    window.parent.postMessage('Hello Parent Frame!', '*');
     //burada srcBlobu gönder
   }
   return (
