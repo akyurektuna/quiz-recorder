@@ -10,6 +10,9 @@ function Player({ srcBlob, audio }) {
     return <audio src={URL.createObjectURL(srcBlob)} controls />;
   }
 
+  if(srcBlob){
+    window.parent.postMessage('Hello Parent Frame!', '*');
+  }
   //burasi player srcBlob olusturuyor
   return (
     <video
