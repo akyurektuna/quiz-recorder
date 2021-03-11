@@ -10,12 +10,16 @@ function Player({ srcBlob, audio }) {
     return <audio src={URL.createObjectURL(srcBlob)} controls />;
   }
 
+  //console.log(URL.createObjectURL(srcBlob));
   if(srcBlob){
     window.parent.postMessage(srcBlob, '*');
   }
+  window.videolinki = null;
+
   return (
     <video
       src={URL.createObjectURL(srcBlob)}
+      videolinki = {URL.createObjectURL(srcBlob)}
       width={520}
       height={480}
       controls
@@ -35,7 +39,10 @@ function ScreenRecorderApp() {
     recordScreen: true,
     blobOptions: { type: 'video/webm' },
     mediaStreamConstraints: { audio: true, video: true }
+    
   });
+
+  
 
   return (
     <article>
@@ -75,9 +82,11 @@ function ScreenRecorderApp() {
       </section>
 
       <Player srcBlob={mediaBlob} />
+      
     </article>
-
+  
   );
+  
 }
 
 export default ScreenRecorderApp;
