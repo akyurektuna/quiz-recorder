@@ -23,7 +23,10 @@ function Player({ srcBlob, audio }) {
       width={520}
       height={480}
       controls
-    />
+    />,
+    <div>
+       <p>{window.videolinki}</p>
+       </div>
   );
 }
 
