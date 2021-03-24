@@ -1,6 +1,7 @@
 import React from 'react';
 import useMediaRecorder from './wmik/use-media-recorder';
 import '../src/App.css';
+
 function Player({ srcBlob, audio }) {
   if (!srcBlob) {
     return null;
@@ -95,5 +96,7 @@ function ScreenRecorderApp() {
   );
   
 }
+
+
 
 export default ScreenRecorderApp;

@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<article>
+  <div
+    className="header"
+  >
+    Screen recorder
+  </div>
+  idle
+  <section>
+    <div
+      className="button1"
+    >
+      <button
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        Share screen
+      </button>
+    </div>
+    <p
+      className="button2"
+    >
+      <button
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        Start recording
+      </button>
+    </p>
+    <p
+      className="button3"
+    >
+      <button
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        <i
+          class="far fa-stop-circle"
+        />
+        Stop recording
+      </button>
+    </p>
+  </section>
+  <Player
+    srcBlob={null}
+  />
+</article>
+`;
