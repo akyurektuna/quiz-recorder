@@ -5,6 +5,15 @@ import App from './App'; //test etmek istedigini import et
 //import { isTSAnyKeyword } from @babel/types;
 import { shallow, mount } from "enzyme";
 import toJson from "enzyme-to-json";
+import Adapter from "enzyme-adapter-react-16";
+
+
+// Enzyme.configure({ adapter: new Adapter() })
+
+it("renders without crushing", () => {
+  const div = document.createElement("div");
+  ReactDOM.render(<App> </App>, div);
+})
 
 it("renders without crashing", () =>{
   shallow(<App />);
