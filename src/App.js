@@ -72,7 +72,7 @@ function ScreenRecorderApp() {
             onClick={startRecording}
             disabled={status === 'recording'}
           >
-            <i class="fas fa-camera"></i>
+            <i class="fas fa-play"></i>
             Start recording
         </button>
         </p>
@@ -85,7 +85,7 @@ function ScreenRecorderApp() {
             disabled={status !== 'recording'}
             
           >
-            <i class="fas fa-stop-circle"></i>
+            <i class="fas fa-stop"></i>
           Stop recording
         </button>
         </p>
