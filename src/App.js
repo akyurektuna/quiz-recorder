@@ -1,6 +1,7 @@
 import React from 'react';
 import useMediaRecorder from './wmik/use-media-recorder';
 import '../src/App.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Player({ srcBlob, audio }) {
   if (!srcBlob) {
@@ -56,7 +57,7 @@ function ScreenRecorderApp() {
       <div className="header">Screen recorder</div>
       {error ? `${status} ${error.message}` : status}
       <section>
-        <div className="button1">
+        {/* <div className="button1">
           <button
             type="button"
             onClick={getMediaStream}
@@ -64,16 +65,18 @@ function ScreenRecorderApp() {
           >
             Share screen
         </button>
-        </div>
+        </div> */}
         <p className="button2">
           <button
             type="button"
             onClick={startRecording}
             disabled={status === 'recording'}
           >
+            <i class="fas fa-camera"></i>
             Start recording
         </button>
         </p>
+
         <p className="button3">
           <button
             type="button"
@@ -82,7 +85,7 @@ function ScreenRecorderApp() {
             disabled={status !== 'recording'}
             
           >
-            <i class="far fa-stop-circle"></i>
+            <i class="fas fa-stop-circle"></i>
           Stop recording
         </button>
         </p>
