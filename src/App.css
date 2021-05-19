@@ -66,6 +66,11 @@ button {
   padding-left: 4px;
   display:inline;
 }
+
+.textStopR{
+  padding-left: 2px;
+}
+
 .fa.fa-car{
   color:red;
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import useMediaRecorder from './wmik/use-media-recorder';
 import '../src/App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import DropboxUpload from './Dropbox';
 
 function Player({ srcBlob, audio }) {
   if (!srcBlob) {
