@@ -1,5 +1,6 @@
 import React from 'react';
 const Dropbox = require('dropbox').Dropbox;
+import {blobLinkForDropbox} from './App';
 
 function uploadFile() {
   const UPLOAD_FILE_SIZE_LIMIT = 150 * 1024 * 1024;
@@ -64,6 +65,7 @@ function uploadFile() {
   }
 }
 
+//not using this function
 function listFiles() {
   const ACCESS_TOKEN = document.getElementById('access-token').value;
   const dbx = new Dropbox({ accessToken: ACCESS_TOKEN });
@@ -79,10 +81,11 @@ function listFiles() {
 const DropboxUpload = () => {
   return (
     <div>
-      <input type="text" id="access-token" placeholder="Access token" />
+      
+      {/* <input type="text" id="access-token" placeholder="Access token" /> */}
       <input type="file" id="file-upload" />
       <button onClick={uploadFile}>Submit</button>
-      <button onClick={listFiles}>List</button>
+      {/* <button onClick={listFiles}>List</button> */}
     </div>
   );
 }

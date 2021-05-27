@@ -38,8 +38,9 @@
 }
 
 button {
+  cursor: pointer;
   align-items: center;
-  width: 157px;
+  min-width: 157px;
   height: 40px;
   background: #57647e;
   border: initial;
@@ -78,3 +79,28 @@ button {
 article .header{
   font-size: 16px;
 }
+
+.fas {
+  margin-right: 5px;
+}
+
+.buttonWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.recording {
+  margin-left: 10px;
+}
+
+.startButton{
+  background: #1c6ed5;
+}
+
+.stopButton{
+  background: #be1e1e;
+}
+
+
+
+
